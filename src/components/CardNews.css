@@ -1,0 +1,17 @@
+.cardNews {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px var(--shadow);
+  background-color: white;
+}
+
+.cardNews img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.cardNews__title {
+  font-size: 1rem;
+}
