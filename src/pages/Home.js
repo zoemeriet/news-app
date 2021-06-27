@@ -14,7 +14,6 @@ export const Home = () => {
         (result) => {
           setLoading(false)
           setNews(result.articles)
-          console.log(result.articles);
         },
         (error) => {
           console.log(error);
@@ -30,7 +29,7 @@ export const Home = () => {
     <div>
       <h1>Home</h1>
       {news && news.map((item, index) => (
-        <CardNews data={item} key={index} />
+        <CardNews data={item} index={index} key={index} />
       ))}
     </div>
   )

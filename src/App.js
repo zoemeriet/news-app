@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Style
 import './App.css';
 
 // Pages
 import { Home } from "./pages/Home";
+import { News } from './pages/News';
 import { Profil } from "./pages/Profil";
 
 // Components
 import { Navbar } from "./components/Navbar";
+
 
 const App = () => {
 
@@ -34,6 +38,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/news/:id">
+            <News />
           </Route>
           <Route path="/profil">
             <Profil />
