@@ -4,9 +4,6 @@ import { useParams, Link } from "react-router-dom";
 // Style
 import './News.css';
 
-// Components
-import { CardNews } from '../components/CardNews';
-
 export const News = () => {
   const { id } = useParams()
   const [loading, setLoading] = useState(true)
