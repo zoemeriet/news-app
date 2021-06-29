@@ -4,6 +4,9 @@ import { useParams, Link } from "react-router-dom";
 // Style
 import './News.css';
 
+// Components
+import { Button } from '../components/Button';
+
 export const News = () => {
   const { id } = useParams()
   const [loading, setLoading] = useState(true)
@@ -31,7 +34,7 @@ export const News = () => {
   return (
     <div className="news"> 
       <Link to="/" className="goBack">
-        Quitter
+        Retour
       </Link>
       {data && 
         <div>
@@ -39,7 +42,7 @@ export const News = () => {
           <h1>{data.title}</h1>
 
           {data.author && 
-            <p className="cardNews__author">Proposé par : {data.author}</p>
+            <p className="cardNews__author">Proposé par : {data.author} le {new Date(data.publishedAt).toLocaleDateString()}</p>
           }
           
           {data.description &&
@@ -51,7 +54,7 @@ export const News = () => {
           }
 
           {data.url &&
-            <a href={data.url} target="_blank" rel="noreferrer">Voir l'article</a>
+            <Button text="Voir l'article" link={data.url} />
           }
         </div>
       }
