@@ -16,7 +16,7 @@ export const Profil = () => {
       <div className="profil__avatar"><img src={Zoe} alt="Profil" /></div>
       <InfoProfil label="Username" text="Zoé Meriet" />
       <InfoProfil label="Email" text="zoe.meriet112@gmail.com" />
-      <InfoProfil label="Téléphone" text="06 48 43 39 89" />
+      <InfoProfil label="Phone" text="06 48 43 39 89" />
     </div>
   )
 }

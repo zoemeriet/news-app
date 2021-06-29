@@ -19,7 +19,6 @@ export const News = () => {
         (result) => {
           setLoading(false)
           setData(result.articles[id])
-          console.log(result.articles[id]);
         },
         (error) => {
           console.log(error);
