@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prérequis
 
-## Available Scripts
+### Vérifier la version de node
 
-In the project directory, you can run:
+1. Ouvrir son terminal et effectuer cette commande
 
-### `yarn start`
+```
+node -v
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Si aucune version de node n'est disponible il faut télécharger nodejs à partir du site : https://nodejs.org/en/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Vérifier la version de yarn
 
-### `yarn test`
+1. Ouvrir son terminal et effectuer cette commande
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+yarn version
+```
 
-### `yarn build`
+2. Si aucune version de yarn n'est disponible il faut télécharger yarn grâce à cette commande
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install --global yarn
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation du projet
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Ouvrir le terminal et cloner le projet grâce à cette commande
 
-### `yarn eject`
+```
+git clone https://github.com/zoemeriet/news-app.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Lancer le projet grâce à ces deux commandes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd news-app
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Ouvrir son navigateur et accéder au projet frâce à cette url : http://localhost:3000
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+(si l'url n'est pas la bonne, vous trouverez l'adresse dans votre terminal lors du lancement de la commande "yarn start")
